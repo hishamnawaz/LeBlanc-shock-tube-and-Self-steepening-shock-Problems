@@ -98,7 +98,7 @@ def compute_rhs(U):
 t = 0.0
 step = 0
 
-print("Starting LeBlanc shock tube simulation...")
+print("LeBlanc shock tube")
 while t < T:
   rho, v_arr, p = conserved_to_primitive(U)
   c = np.sqrt(gamma * p / rho)
